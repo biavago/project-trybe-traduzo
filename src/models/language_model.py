@@ -9,9 +9,8 @@ class LanguageModel(AbstractModel):
         super().__init__(data)
 
     def to_dict(self):
-        # Ele deve retornar um novo dicionário contendo os atributos name e acronym.
+        # deve retornar um novo dict contendo os atributos name e acronym.
         return {
             "name": self.data["name"],
             "acronym": self.data["acronym"],
         }
-    
