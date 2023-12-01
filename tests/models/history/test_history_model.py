@@ -1,7 +1,8 @@
-# import json
-# from src.models.history_model import HistoryModel
+import json
+from src.models.history_model import HistoryModel
 
 
-# Req. 7
 def test_request_history():
-    raise NotImplementedError
+    history_load = json.loads(HistoryModel.list_as_json())
+
+    assert isinstance(history_load, list)
